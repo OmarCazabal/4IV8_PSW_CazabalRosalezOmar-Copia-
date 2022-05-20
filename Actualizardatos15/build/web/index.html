@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <script> 
+function registro() {
+    var nom=document.getElementById('nombre').value;
+    var apellidop=document.getElementById('appat').value;
+    var apellidom=document.getElementById('apmat').value;
+    var bol=document.getElementById('boleta').value;
+    var telA=document.getElementById('telefono').value;
+
+    var letraspermitidas= /[A-Za-z]+/g;
+    var numerospermitidos=/^[0-9]+$/;
+
+    if((nom=='')|| (apellidop=='')||(apellidom=='')||(bol=='')||(telA=='') ){
+        alert("Debes de llenar todos los datos");
+    } else if((!(nom.match(letraspermitidas)))){
+        alert("Introduce solo letras");
+
+    }
+    else if((!(apellidop.match(letraspermitidas)))){
+        alert("Introduce solo letras");
+        
+    }
+    else if((!(apellidom.match(letraspermitidas)))){
+        alert("Introduce solo letras");
+        
+    }else if((!(bol.match(numerospermitidos)))){
+        alert("introduce solo numeros");
+        
+        
+    }else if((!(telA.match(numerospermitidos)))){
+        alert("Ingresa solo numeros");
+    }
+    else if(!(bol.length=10)){
+        alert("La boleta solo tiene 10 numeros")
+        
+    }
+    else if(!(telA.length=10)){
+        alert("Los telefonos solo cuentan con 10 numeros")
+    }
+  
+    else{
+        document.registrar.submit();
+    }
+   }
+  function actualizar(){
+       var select= document.getElementBYId('menu');
+       var name=document.getElementBYId('nombre');
+       var bol=document.getElementBYId('boleta');
+       
+       var selec=parseInt(select);
+       
+        var letraspermitidas= /[A-Za-z]+/g;
+    var numerospermitidos=/^[0-9]+$/;
+    
+    if(bol==''||name=='' ){
+        alert("Debes de llenar todos los datos");
+    }  else if(selec=1){
+        if(!(name.match(letraspermitidas))){
+            alert("Solo introduzca letras");
+        }
+    }else if(selec=2){
+        if(!(name.match(letraspermitidas))){
+            alert("Solo introduzca letras");
+        }
+        
+    }else if(selec=3){
+        if(!(name.match(letraspermitidas))){
+            alert("Solo introduzca letras");
+        }
+        
+    }else if(!(bol.match(numerospermitidos))){
+        alert("Solo introduce numeros")
+        
+    }
+    else if(!(bol.length=10)){
+        alert("Las boletas son de 10 numeros")
+    }
+    else{
+        document.actualizardatos.submit();
+    }
+   
+}
+ 
+</script>
+    <div class="main">
+    <div class="container">
+            <h1>Consulta de Alumnos de la Batiz</h1>
+            <br>
+            
+        </div>
+        <h3> <a href="Consulta">Consulta la base de datos</a></h3>  
+        <div class="registro">
+            <form  name="registrar" method="post" action="RegistrarAlumnos">
+                <label>Nombre</label>
+                <br>
+                <input type="text" name="nombre"  id="nombre">
+                <br>
+                <label>Apellido Paterno</label>
+                <br>
+                <input type="text" name="appat" id="appat">
+                <br>
+                <label>Apellido Materno</label>
+                <br>
+                <input type="text" name="apmat" id="apmat">
+                <br>
+                <label>Boleta</label>
+                <br>
+                <input type="text" name="boleta" id="boleta">
+                <br>
+                <label>Telefono</label>
+                <br>
+                <input type="text" name="telefono" id="telefono">
+                <br>
+                <input type="submit" onclick="registro()" value="Registrar Nuevo Alumno">
+                <br>
+                <input type="reset" value="Borrar Datos">
+                <br>
+            </form>
+        </div>
+        
+        <div class="eliminar">
+            <form method="get" action="EliminaAlumno" name="elimina">
+                <label>Ingresa la boleta</label>
+                <br>
+                <input type="text" name="boletaelimina" >
+                <br>
+                <input type="submit" value="Dar de baja">
+                <br>
+            </form>
+        </div>
+        
+        <div class="nuevosDatos">
+            <form method="post" action="ActualizarDatosAlumno" name="actualizardatos">
+              Elige que dato deseas cambiar
+                <select name="menu" id="menu">
+                <option value="1">Nombre</option>
+                <option value="2">Apellido Paterno</option>
+                <option value="3">Apellido Materno</option>
+                <option value="4">Boleta</option>
+                <option value="5">Telefono</option>
+                </select>
+                <br>
+                <br>
+                <label>Ingrese el nuevo dato</label>
+                <br>
+                <input required type="text" name="nombre" id="nombre" >
+                <br>
+                <label>Ingrese la boleta</label>
+                <br>
+                <input type="text" name="boleta" id="boleta" >
+                <br>
+                <input type="submit" onclick="actualizar()" value="Actualizar Información">
+                <br>
+            </form>
+        </div>
+        
+      
+    </div>
+        
+        
+    </body>
+</html>

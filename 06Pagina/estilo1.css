@@ -1,0 +1,349 @@
+
+@keyframes animacion_test{
+    from{
+        background-color:red;
+    }
+    to{
+        background-color:black;
+        }
+    }
+    @keyframes girar{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes label-animacion{
+        from{
+            transform: rotate(0deg);
+            margin-left: 0;
+        }
+        to{
+            transform: rotate(180deg);
+            margin-left: 85vw;
+        }
+    }
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    background-color: red;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+}
+img{
+    width: 100px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.lista{
+    float: left;
+    list-style: none;
+    padding: 15px;
+    font-size: x-large;
+}
+.animada{
+    display: flex;
+    animation: animacion_test 2s alternate infinite;
+    padding-left: 1rem;
+}
+nav{
+    float: right;
+    margin-top: 2rem;
+    margin-right: 4rem;
+
+}
+a{
+    text-decoration: none;
+    font-family: fantasy;
+    color: bisque;
+}
+hr{
+    animation: animacion_test 2s alternate infinite;
+
+}
+
+.lista:hover a{
+    color: white;
+}
+li.desple:hover a{
+    color: bisque;
+}
+header{
+    background-color:black;
+    height: 180px;
+}
+.main{
+    height: 1400px;
+    width: 1000px;
+    background-color:black;
+    margin: auto;
+}
+
+.desple{
+     list-style: none ;
+     display: none  ;
+   
+}
+.lista:hover .desple {
+    display: block;
+    float: left;
+    padding: 1em;
+    
+}
+
+.contenedor1{
+    color: white;
+    font-size: xx-large;
+    font-family:'Courier New', Courier, monospace ;
+    margin-left: 2rem;
+}
+.contenedor2{
+    color:white;
+    margin-left: 3rem;
+    width: 500px;
+    height: 200px;
+    font-size: large;
+    text-align: justify;
+    float: left;
+}
+
+.contenedor3 img{
+    width: 100px;
+    float: left;
+}
+.contenedor4 img{
+    width:200px;
+  float: left;
+}
+.contenedor5 img{
+    margin-left:2rem ;
+    width:300px;
+    float: left;
+}
+.contenedor6{
+    color:white ;
+    margin-left: 2rem;
+    width: 500px;
+    height: 200px;
+    float: left;
+    font-size: large;
+    text-align: justify;
+    
+}
+
+.contenedor8 img{
+    margin-right:3rem ;
+    width:300px;
+    height: 200px;
+    float: right;
+}
+.contenedor9{
+    padding-top: 2rem;
+    color: white;
+    margin-left: 2rem;
+    width: 500px;
+    height: 150px;
+    float: left;
+    font-size: large;
+    text-align: justify;
+   
+}
+
+.contenedor11{
+    float: left;
+    margin: auto;
+}
+.contenedor11 iframe{
+    width: 700px;
+    height: 400px;
+    margin-left: 8rem;
+
+}
+.main-container{
+    width: 940px;
+    height: 600px;
+    background-color: black;
+    margin: auto;
+    color: white;
+}
+.logo{
+    width: 924px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    padding-left: 1rem;
+    padding-top: 2rem;
+
+}
+.who-we{
+    width: 924px;
+    height: 200px;
+    background-color: black;
+    color:white;
+    font-size: large;
+    padding-left: 1rem;
+    padding-top: 2rem;
+
+}
+.difere{
+    width: 924px;
+    height: 200px;
+    background-color:black;
+    color: white;
+    font-size: large;
+    padding-left: 1rem;
+    padding-top: 2rem;
+
+}
+.xbox{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    font-size: large;
+    color: white;
+    text-align: justify;
+
+}
+.xbox h2{
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+.xbox img {
+    width: 300px;
+    height: 300px;
+    padding-left: 30rem ;
+}
+.xbox iframe{
+    height: 300px;
+    width: 600px;
+    padding-left: 25rem;
+}
+.play{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    font-size: large;
+    color: white;
+    text-align: justify;
+
+}
+.creador{
+    float: left;
+}
+.creador img{
+    width: 200px;
+    height: 300px;
+}
+.plei{
+    float: left;
+}
+.plei img{
+    width: 200px;
+    height: 200px;
+}
+.plei iframe{
+    height: 300px;
+    width: 600px;
+    padding-left: 25rem;
+}
+.nintendo{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    font-size: large;
+    color: white;
+    text-align: justify;
+
+}
+.creador2{
+    float: left; 
+}
+.creador2 img{
+    width: 200px;
+    height: 300px;
+}
+.DK{
+    float: left;
+}
+.DK img{
+    width: 200px;
+    height: 200px;
+}
+.nintendo iframe{
+    height: 300px;
+    width: 600px;
+    padding-left: 25rem;
+}
+.exclusivas{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    font-size: large;
+    color: white;
+    text-align: justify;
+}
+.tabla{
+    margin: auto;
+}
+table{
+    border-color: rgba(250, 210, 210, 0.267);
+}
+
+table img{
+    width: 170px;
+    height: 170px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+table p{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table tr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+table a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(250, 210, 210);
+}
+.prox{
+    width: 800px;
+    height: 80px;
+    margin: auto;
+    background-color: aquamarine;
+    color: bisque;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    animation: animacion_test 2s alternate infinite;
+    padding-top: 15rem;
+    padding-top: 0;
+}
+.contenedor-form{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+

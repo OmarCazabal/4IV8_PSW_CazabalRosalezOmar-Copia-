@@ -1,0 +1,172 @@
+body {
+  background-color: #ffffff;
+}
+
+div{
+  text-align: center;
+  margin: 50px;
+}
+
+.form {
+  background: #fff;
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  border-radius: 5px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-top: 5px solid #0e3721;
+}
+
+
+.termsConditions{
+  margin: 0 auto 5px 80px;
+}
+
+.titulopagina{
+  font-size: 2em;
+  font-weight: bold;
+}
+.titulosecundario{
+  color: grey;
+}
+
+
+.valor {
+  background-color: #ebebeb;
+  color: black;
+}
+
+
+.formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+#add {
+  width: 200px;
+  color: white;
+  background-color: #ffc400;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+#add:hover {
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  transform: translateY(-3px);
+  width: 300px;
+  border-top: 5px solid #000000;
+  border-radius: 0%;
+}
+
+
+ul li{
+  color: #0e3721;
+  display: block;
+  position: relative;
+}
+
+ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+ul li label{
+  display: block;
+  position: relative;
+  font-weight: 200;
+  font-size: 1.15em;
+  padding: 25px 25px 25px 80px;
+  margin: 8px auto;
+  height: 20px;
+  z-index: 9;
+  cursor: pointer;
+}
+
+ul li:hover label{
+  color: rgb(255, 174, 0);
+}
+
+ul li .radio_demo{
+  display: block;
+  margin-top: 0px;
+  position: absolute;
+  border: 3px solid #000000;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  top: 25px;
+  left: 40%;
+  z-index: 5;
+}
+  
+ul li .radio_demo::before {
+  position: absolute;
+  content: '';
+  border-radius: 80%;
+  height: 20px;
+  width: 20px;
+  top: 5px;
+  left: 5px;
+  margin: auto;
+  transition: background 0.25s linear;
+}
+  
+input[type=radio]:checked ~ .radio_demo {
+  border: 3px solid #ff0d0d;
+}
+  
+input[type=radio]:checked ~ .radio_demo::before{
+  background: #ff0d0d;
+}
+
+
+table {
+width:100%;
+border:1px solid $color-form-highlight;/
+}
+
+tbody>tr {
+display:flex;
+width:100%;
+background:rgb(179, 60, 60);
+padding:('$'half-spacing-unit * 1.5) 0;
+}
+
+table>tr {
+display:flex;
+width:100%;
+}
+
+table>tr:nth-of-type(2n+1){
+background: #EEEEEE;
+}
+
+table>tr>td, .tbody>tr>th {
+flex: 1 1 20%;
+text-align:center;
+}
+tbody>tr>th {
+color:white;
+text-decoration: none;
+position:relative;
+display:inline-block;
+padding-left: 24px;
+padding-right:24px;
+  text-transform:uppercase;
+  width: 12% !important;
+
+}
+
+table>tr>td>a{
+  
+}

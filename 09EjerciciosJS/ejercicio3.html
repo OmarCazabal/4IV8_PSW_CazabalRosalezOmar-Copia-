@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo3.css">
+    <script src="../09EjerciciosJS/javas/ejercicio3.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <form method="post" name="ejercicio3">
+            <label >
+                <h3><p>Bienvenidos al portal de la empresa, aquí podrás calcular cuál es el total de tu compra con el 15% de descuento</p></h3>
+            </label>
+            <table>
+                <tr>
+                    <td>Ingresa el total de tu compra</td>
+                    <td><input type="text" name="totalDeCompra" onkeypress="return total(event)" placeholder="Ingresa el total"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="descuento" onclick="calcula()"></td>
+                </tr>
+                <tr>
+                    <td>Tu compra con el descuento tiene un total de:</td>
+                    <td><input type="text" name="cantidadConDescuento" readonly="readonly" placeholder="Total"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button"  value="borrar" onclick="borrardatos()"></td>
+                </tr>
+            </table>
+        </form>
+        <a href="../09EjerciciosJS/directoriojs.html">Index</a>
+    </div>
+</body>
+</html>

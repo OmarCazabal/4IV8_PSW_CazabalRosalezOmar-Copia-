@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="validación.js"></script>
+    <link rel="stylesheet" href="estiloform.css">
+      <title>Mesa dinámica</title>
+</head>
+<body>
+
+    <div>
+
+        <form >
+            <div class="titulopagina title"> Calculo de Intereses</div>
+            <div class="titulosecundario title">Cálculo de interés para la compra de un automóvil.</div>
+            <input type="text" class="valor formEntry"  id="valaut" onchange="return  valinicial(this);" placeholder="Valor Original Automovil" maxlength="10">
+            <input type="text" class="valor formEntry"  id="eng" onchange="return valenganche(this);" placeholder="Enganche Inicial">
+            <div class="">
+                <h3>Seleccionar periodo de pagos:</h3>
+                <ul>
+                    <li>
+                        <input type="radio" name='meses' id="m3" name="fav_language" value="3">
+                        <label for="m3">3 Meses</label>
+                        <div class="radio_demo"></div>
+                    </li>
+                    <li>
+                        <input type="radio" name='meses' id="m6" name="fav_language" value="6">
+                        <label for="m6">6 Meses</label>
+                        <div class="radio_demo"></div>
+                    </li>
+                    <li>
+                        <input type="radio" name='meses' id="m9" name="fav_language" value="9">
+                        <label for="m9">9 Meses</label>
+                        <div class="radio_demo"></div>
+                    </li>
+                    <li>
+                        <input type="radio" name='meses' id="m12" name="fav_language" value="12">
+                        <label for="m12">12 Meses</label>
+                        <div class="radio_demo"></div>
+                    </li>
+                    <li>
+                        <input type="radio" name='meses' id="m18" name="fav_language" value="18">
+                        <label for="m18">18 Meses</label>
+                        <div class="radio_demo"></div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <input class="formEntry" type="button" id="add" value="Añadir" onclick="valinicial">
+    </div>
+
+    <table>
+        <caption>Información del Credito</caption>
+        <tbody>
+            <tr>
+                <th>Valor del Automovil</th>
+                <th>Enganche Inicial</th>
+                <th>Cantidad Financiada</th>
+                <th>Perido Seleccionado</th>
+                <th>Interés</th>
+                <th>Valor Futuro del Crédito</th>
+                <th>Cuota</th>
+                <th>Eliminar</th>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>

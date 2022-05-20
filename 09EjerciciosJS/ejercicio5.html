@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo5.css">
+    <script src="../09EjerciciosJS/javas/ejercicio5.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <form method="post" name="ejercicio5">
+            <label>
+                <h2>
+                    <p>Calcula el porcentaje de hombres y de mujeres que tengas en tu salón </p>
+                </h2>
+            </label>
+            <table>
+                <tr>
+                    <td>Ingresa la cantidad de alumnos que tengas</td>
+                    <td><input type="text" name="ttal" onkeypress="return total(event)" placeholder="Cantidad de alumnos">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ingresa la cantida de hombres</td>
+                    <td><input type="text" name="cantidadDeHombres" onkeypress="return hombres(event)" placeholder="Cantidad de hombres"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="porcentajeHombres" onclick="PorcentajeHombres()"></td>
+                </tr>
+                <tr>
+                    <td>El total de hombres es de:</td>
+                    <td><input type="text" name="porcentajedehombre" placeholder="Total"></td>
+                </tr>
+                <tr>
+                    <td>Ingresa la cantidad de mujeres</td>
+                    <td><input type="text" name="cantidadDeMujeres" onkeypress="return mujeres(event)" placeholder="Cantidad de mujeres"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="porcentajeMujeres" onclick="PorcentajeMujeres()"></td>
+                </tr>
+                <tr>
+                    <td>El total de mujeres es de:</td>
+                    <td><input type="text" name="porcentajedemujeres" placeholder="Total" readonly="readonly"></td>
+                </tr>
+    
+            </table>
+            <a href="../09EjerciciosJS/directoriojs.html">Index</a>
+        </form>
+    </div>
+</body>
+
+</html>

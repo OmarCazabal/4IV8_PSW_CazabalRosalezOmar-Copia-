@@ -1,0 +1,46 @@
+*{
+    
+    margin: 0;
+    
+}
+body{
+    background-image: url(fondochidori1.jpg);
+    background-size: cover;
+    color: #005200;
+}
+.main{
+    background-color:#00520097;
+    margin: auto;
+    height: 900px;
+    width: 850px;
+
+  
+}
+.container{
+    margin-left: 11rem;
+}
+.registro{
+    color: white;
+    width: 300px;
+       height: 250px;
+       background-color: #258d19;
+       margin-left: 18rem;
+     
+       
+}
+.eliminar{
+     color: white;
+    width: 300px;
+       height: 90px;
+       background-color:#258d19;
+       margin-left: 18rem;
+       margin-top: 2rem;
+}
+.nuevosDatos{
+     color: white;
+    width: 300px;
+       height: 200px;
+       background-color: #258d19;
+       margin-left: 18rem;
+       margin-top: 2rem;
+}

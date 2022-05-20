@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo4.css">
+    <title>Document</title>
+</head>
+<body>
+        <form action="" name="ejercicio4" method="post">
+            <label><H2>Vamos a calcular tu calificación final en <em>Algoritmos</em></H2></label>
+            <div class="main">
+                <div class="parciales">
+                    <table>
+                    <tr>
+                        <td>Ingresa la calificación de tu primer parcial</td>
+                        <td><input type="text" name="parcial1" onkeypress=" return validar(event)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Ingresa la calificación de tu segundo parcial</td>
+                        <td><input type="text" name="parcial2" onkeypress="return validar(event)"></td>
+                    </tr>
+                    <tr>
+                        <td>Ingresa la calificación de tu tercer parcial</td>
+                        <td><input type="text" name="parcial3" onkeypress="return validar(event)"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="calcpromedio" value="Calcular promedio" onclick="promedio_parcial()"></td>
+                    </tr>
+                    <tr>
+                        <td>La calificación de tus parciales es de:</td>
+                        <td><input type="text" name="calificacionTP" readonly="readonly"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input  type="button" name="borrar" value="borrar" onclick="borrardatos()"></td>
+                    </tr>
+                </table>
+                </div>
+                <div class="calificaciones">
+                    <table>
+                        <tr>
+                            <td>Ingresa la calificación de tu trabajo final</td>
+                            <td><input type="text" name="caltra" onkeypress="return validar(event)" placeholder="calificación trabajo final"></td>
+                        </tr>
+                        <tr>
+                            <td>Ingresa la calificación de tu examen</td>
+                            <td><input type="text" name="calexa" onkeypress="return validar(event)" placeholder="Ingresa la calificación de tu examen"></td>
+                
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td><input type="button" name="calcular" value="Calcula" onclick="calcular_datos()"></td>
+                        </tr>
+                        <tr>
+                            <td>Tu calificación final es de:</td>
+                            <td><input type="text" name="calificacionT" placeholder="tu calificación final es..." readonly="readonly"></td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="../09EjerciciosJS/directoriojs.html">Index</a>
+        </div>
+        </form>
+   
+    
+    <script src="../09EjerciciosJS/javas/ejercicio4.js"></script>
+</body>
+</html>

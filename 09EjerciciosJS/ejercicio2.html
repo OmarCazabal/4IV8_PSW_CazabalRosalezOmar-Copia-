@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo2.css">
+    <script src="../09EjerciciosJS/javas/ejercicio2.js"></script>
+    <title>Comisión de ventas</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <form method="post" name="ejercicio2">
+            <label>
+                <h2>
+                    <p>Calcular el total que recibirá un vendedor por sus ventas</p>
+                </h2>
+            </label>
+            <table>
+                <tr>
+                    <td>Ingresa la cantidad de tu sueldo base</td>
+                    <td><input type="text" name="suelbase" onkeypress="return sueldo(event)" placeholder="sueldo base"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="ventas" onclick="comision()" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td>El total de tu sueldo contando las ventas es de:</td>
+                    <td><input type="text" name="total" readonly="readonly" placeholder="sueldo total"></td>
+                </tr>
+            </table>
+        </form>
+        <a href="../09EjerciciosJS/directoriojs.html">Index</a>
+    </div>
+</body>
+
+</html>

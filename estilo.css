@@ -1,0 +1,72 @@
+@keyframes animacion_test{
+    from{
+        background-color:rgb(192, 125, 0);
+    }
+    to{
+        background-color:#0A1172;
+        }
+    }
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+   
+}
+html,body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(imagens/maicra.jpg);
+    background-size: cover;
+}
+.contenedor{
+    text-align: center;
+    width: 401px;
+    height: 50;
+    background-color: rgba(128, 128, 128, 0.705)  ; 
+    display: flex;
+    animation: animacion_test 2s alternate infinite;
+    margin: auto;
+    border: solid black;
+}
+    
+.contenedor1{
+    width: 150px;
+    height: 100px;
+    background-color:rgba(128, 128, 128, 0.548);
+    margin: 15px;
+    padding: 25px;
+   margin-left: 2rem;
+    border: solid black;
+    float: left;
+
+    
+
+}
+.contenedor2{
+    width: 150px;
+    height: 100px;
+    background-color:rgba(128, 128, 128, 0.548);
+    margin: 15px;
+    padding: 25px;
+   margin-left: 2rem;
+    border: solid black;
+    float: left;
+
+
+}
+.contenedor1 a{
+    color: rgb(192, 125, 0) ;
+   
+}
+.contenedor1 a:hover{
+    color: gray;
+}
+.contenedor2 a{
+    color: rgb(192, 125, 0);
+}
+.contenedor2 a:hover{
+    color: gray;
+}
+img{
+    height: 50px;
+    width: 100px;
+}

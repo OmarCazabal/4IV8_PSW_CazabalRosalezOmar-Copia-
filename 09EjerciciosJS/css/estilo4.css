@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+
+        background-image: url(../maicra.jpg);
+        background-size: cover;
+}
+label{
+   text-align: center;
+}
+.parciales{
+    width: 20%;
+    height: 220px;
+    background-color:rgba(206, 173, 29, 0.548);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:2rem ;
+    margin-top: 3rem;
+    margin-left: 25rem;
+    
+}
+.calificaciones{
+    background-color:rgba(206, 173, 29, 0.548);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:2rem ;
+    margin-top: 3rem;
+    margin-left: 25rem;
+}

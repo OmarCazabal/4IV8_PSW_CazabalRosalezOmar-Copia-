@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo6.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <form method="post" name="ejercicio6">
+            <label><h2>Vamos a calcular tu edad</h2></label>
+            <table>
+                <tr>
+                    <td>Ingresa tu año de nacimiento</td>
+                    <td><input type="text" name="añoNac" onkeypress="validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Ingresa tu día de nacimiento</td>
+                    <td><input type="text" name="diaNac" onkeypress="validar(event)"></td>
+                </tr>
+                <tr>
+                    <td>Ingresa tu mes del 1-12</td>
+                    <td><input type="text" name="mesNac" onkeypress="validar(event)"></td>
+                </tr>
+                    <tr>
+                        <td>Ingresa el año actual</td>
+                        <td><input type="text" name="añoAct" onkeypress="validar(event)"></td>
+                    </tr>
+                    <tr>
+                        <td>Ingresa el día actual</td>
+                        <td><input type="text" name="diaAct" onkeypress="validar(event)"></td>
+                    </tr>
+                    <tr>
+                        <td>Ingresa el mes actual 1-12</td> 
+                        <td><input type="text" name="mesAct" onkeypress="validar(event)"></td>
+                    </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="calcula" value="calcula tu edad" onclick="calcular()"></td>
+                </tr>
+                <tr>
+                    <td>Tu edad es </td>
+                    <td><input type="text" name="edad" ></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="borrarr" value="borrar datos" onclick="borrar()"></td>
+                </tr>
+            </table>
+        </form>
+        <a href="../09EjerciciosJS/directoriojs.html">Index</a>
+        
+    </div>
+
+    <script src="javas/ejercicio6.js"></script>
+</body>
+</html>

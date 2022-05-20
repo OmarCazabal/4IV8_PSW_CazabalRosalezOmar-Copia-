@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="../09EjerciciosJS/css/estilo1.css  ">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <form method="post" name="ejercicio1"  action="">
+            <label>
+                <h3>
+                    <p>Suponga que un individuo desea invertir su capital en un banco y desea saber cuanto ganará después de un mes si el banco
+                        paga a razón de 2% mensual
+                    </p>
+                </h3>
+              </label>
+            <table>
+                <tr>
+                    <td>Ingresa la cantidad que deseas invertir</td>
+                    <td><input type="text" name="cantidad" onkeypress="return validarc(event)" placeholder="Cantidad"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="interess" onclick="interes()"></td>
+                </tr>
+                <tr>
+                    <td>Su saldo con el interés mensual de 2% es de </td>
+                    <td><input type="text" name="sueldoT"  readonly="readonly"  placeholder="Cantidad Total"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="borrar" value="borrarDatos" onclick="borrardatos()"></td>
+                </tr>
+            </table>
+        </form>
+        <a href="../09EjerciciosJS/directoriojs.html">Index</a>
+    </div>
+    <script src="../09EjerciciosJS/javas/ejercicio1.js"></script> 
+</body>
+
+</html>
