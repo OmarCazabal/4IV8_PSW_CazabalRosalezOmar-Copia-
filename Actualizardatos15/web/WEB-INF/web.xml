@@ -20,6 +20,10 @@
         <servlet-name>Consulta</servlet-name>
         <servlet-class>Consulta</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>guardarUsuario</servlet-name>
+        <servlet-class>guardarUsuario</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ConsultarAlumnnos</servlet-name>
         <url-pattern>/ConsultarAlumnnos</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>Consulta</servlet-name>
         <url-pattern>/Consulta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>guardarUsuario</servlet-name>
+        <url-pattern>/guardarUsuario</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
