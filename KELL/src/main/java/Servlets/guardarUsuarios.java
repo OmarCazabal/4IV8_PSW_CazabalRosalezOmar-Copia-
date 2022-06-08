@@ -36,7 +36,7 @@ public class guardarUsuarios extends HttpServlet {
             String nom,appat,apmat,email,empresa,contra;
             int tel;
             
-            nom = request.getParameter("nombre");
+            nom = request.getParameter("nombre_persona");
             appat= request.getParameter("regappat");
             apmat=request.getParameter("regapmat");
             email=request.getParameter("regcorreo");

@@ -36,6 +36,10 @@
         <servlet-name>guardarUsuarios</servlet-name>
         <servlet-class>Servlets.guardarUsuarios</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>actualizarUsuario</servlet-name>
+        <servlet-class>Servlets.actualizarUsuario</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>guardarIngrediente</servlet-name>
         <url-pattern>/guardarIngrediente</url-pattern>
@@ -71,6 +75,10 @@
     <servlet-mapping>
         <servlet-name>guardarUsuarios</servlet-name>
         <url-pattern>/guardarUsuarios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>actualizarUsuario</servlet-name>
+        <url-pattern>/actualizarUsuario</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

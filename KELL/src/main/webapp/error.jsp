@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>INGREDIENTE REGISTRADO CON EXITO!</h1>
+        <h1>NO SE REGISTRO USUARIO!</h1>
     </body>
 </html>

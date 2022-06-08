@@ -15,11 +15,9 @@ public class Conexion {
         String url, username, password;
         
         url = "jdbc:mysql://localhost/kell";
-        username = "Alejandro";
-                //"root";
-        password =//"n0m3l0"; 
-                "gl0rfInd3#";
-                //"Cami3105+";
+        username ="root";
+        password ="n0m3l0"; 
+               
         
         Connection con = null;
         

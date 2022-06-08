@@ -43,7 +43,7 @@
             <form method="post" name="registro_usuario" id="registro_usuario" action="guardarUsuarios">
                     <h3>REGISTRO</h3>
                 <p id="nombre">Nombre:</p>
-                <input type="text" id="regnombre" name="regnombre" >
+                <input type="text" id="regnombre" name="nombre_persona" >
                 <p id="appat">Apellido Paterno:</p>
                 <input type="text" id="regappat" name="regappat" >
                 <p id="apmat">Apellido Materno:</p>

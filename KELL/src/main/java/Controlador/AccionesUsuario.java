@@ -55,7 +55,7 @@ import Modelo.MUsuario;
             con.close();
             
         }catch(Exception ex){
-            System.out.println("Error al registrar el empleado");
+            System.out.println("Error al registrar el usuarios");
             System.out.println(ex.getMessage());
         
         }
